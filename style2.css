@@ -300,13 +300,31 @@ nav .navlist ul a{
   .cat-card, .product-card{flex:1 1 calc(50% - 12px)}
   .footer-grid{grid-template-columns:repeat(2,1fr)}
 }
-@media (max-width:520px){
-  .brand-text h1{
-    font-size:16px}
-  .hero-text h2{
-    font-size:40px}
-  .cat-card, .product-card{
-    flex:1 1 100%}
-  .main-nav{
-    display:none}
+
+@media screen and (max-width: 520px) {
+    .container, .header, .main-content, .hero-inner, .categories-row, .products-row {
+        width: 100% !important;
+        display: block; 
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .cat-card, .product-card {
+        flex: 1 1 100% !important; 
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .brand-text h1 {
+        font-size: 24px !important; 
+    }
+    
+    .hero-text h2 {
+        font-size: 32px !important;
+    }
 }
